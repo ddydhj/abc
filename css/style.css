@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #1e2c5c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+    overflow: hidden;
+    zoom: 1;
+}
+
+header,
+main,
+footer,
+section,
+article,
+nav,
+aside {
+    display: block;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    border-top: 4px solid #1e2c5c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+main {
+    padding-top: 60px;
+}
+
+nav,
+.container,
+.foot {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 60px;
+    line-height: 60px;
+}
+
+nav img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #1e2c5c;
+}
+
+nav ul li a:hover {
+    background-color: #1e2c5c;
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.comments {
+    line-height: 1.5;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 10px;
+}
+
+.comments::before,
+.comments::after {
+    font-family: 宋体;
+    color: #999;
+}
+
+.comments::before {
+    content: "“";
+}
+
+.comments::after {
+    content: "”";
+}
+
+.item {
+    position: relative;
+}
+
+.item h2 {
+    margin: 20px auto;
+    color: #1e2c5c;
+    /* 第一种实现方式 */
+    /* border-left: 20px solid #1e2c5c;
+    padding-left: 15px; */
+}
+
+/* 第二种实现方式 */
+
+.item h2::before {
+    content: '█';
+    padding-right: 15px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item .img1,
+.item .img2,
+.item .img3 {
+    border-radius: 50%;
+}
+
+.item .img1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+.item .img2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+
+.item .img3 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    top: 280px;
+}
+
+footer {
+    background-color: #f1f3f4;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.foot {
+    text-align: center;
+    line-height: 1.5;
+}
